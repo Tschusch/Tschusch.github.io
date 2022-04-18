@@ -8,24 +8,25 @@
 
     <body>
         <h1>
-            Umrechner
+            Bananen - Kirschen Umrechner
         </h1>
 
-        <p>Geben Sie eine Zahl ein:</p>
+        <p>Geben Sie ein wieviele Bananen Sie in Kirschen umwandeln wollen:</p>
         <input id="area" type="text">
-        <input onclick="calc()" type="submit">
+        <input id="banana" onclick="calc()" type="submit">
         <p id="meinAbsatz">0</p>
     </body>
     <script>
         function calc(){
             ausgabe = document.getElementById("meinAbsatz")
             input = document.getElementById("area")
-            ausgabe.innerText = input.value * 12
+            banana = document.getElementById("banana")
+            ausgabe.innerText = banana + " Bananen sind " + input.value * 12 + " Kirschen"
         }
 
         if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(function() { console.log("Service worker registered"); });
-    }
+            navigator.serviceWorker.register('/sw.js')
+            .then(function() { console.log("Service worker registered"); });
+        }
     </script>
 </html>
