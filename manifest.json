@@ -1,0 +1,14 @@
+{
+    "name": "Joush Umrechner",
+    "short_name": "Umrechner",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color":"#ffffff",
+    "icons": [
+      {
+        "src": "logo.png",
+        "sizes": "265x246",
+        "type": "image/png"
+      }]
+  }
