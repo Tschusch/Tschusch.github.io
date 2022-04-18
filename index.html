@@ -13,15 +13,14 @@
 
         <p>Geben Sie ein wieviele Bananen Sie in Kirschen umwandeln wollen:</p>
         <input id="area" type="text">
-        <input id="banana" onclick="calc()" type="submit">
+        <input onclick="calc()" type="submit">
         <p id="meinAbsatz">0</p>
     </body>
     <script>
         function calc(){
             ausgabe = document.getElementById("meinAbsatz")
             input = document.getElementById("area")
-            banana = document.getElementById("banana")
-            ausgabe.innerText = input + " Bananen sind " + input.value * 12 + " Kirschen"
+            ausgabe.innerText = input.innerText + " Bananen sind " + input.value * 2 + " Kirschen"
         }
 
         if('serviceWorker' in navigator) {
